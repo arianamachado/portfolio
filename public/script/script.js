@@ -1,4 +1,4 @@
-{
+$(document).ready(function () {
 	const DOM = {};
 	DOM.svg = document.querySelector('.morph');
 	DOM.shapeEl = DOM.svg.querySelector('path');
@@ -273,4 +273,4 @@
 	}
 
 	init();
-};
+});

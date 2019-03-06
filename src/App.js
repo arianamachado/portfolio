@@ -16,8 +16,8 @@ class App extends Component {
           </svg>
         </div>
         <div className="content-wrap top-header">
-          <video autoplay loop muted>
-            <source src="img/Memoji.mov" />
+          <video autoPlay loop muted>
+            <source src="./images/Memoji.mov" type="video/mov" />
           </video>
           <h1>Hello. I’m <span id="name">Ariana Machado</span>, <br />a Product Designer with a <br />curious mind and a passion <br />for
           simple solutions.</h1>
