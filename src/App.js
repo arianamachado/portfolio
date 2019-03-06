@@ -26,7 +26,9 @@ class App extends Component {
         this.setState({ projects });
       })
       .catch(console.error)
+
   }
+
   render() {
     return (
       <main className="App">
