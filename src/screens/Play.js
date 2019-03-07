@@ -44,24 +44,25 @@ class Play extends Component {
         // };
 
         return (
-            < main >
+            < main>
                 <h1 id="pageTitle">Play</h1>
-                <Masonry
-                    className={'my-gallery-class'} // default ''
-                    elementType={'ul'} // default 'div'
-                    options={masonryOptions} // default {}
-                    disableImagesLoaded={false} // default false
-                    updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-                >
-                    {this.state.play.length &&
-
-                        this.state.play.map((item, key) => {
-                            return (
-                                <li className="image-element-class">
-                                    <img src={item.fields.image.fields.file.url} />
-                                </li>)
-                        })};
-                </Masonry>
+                <div id="playGallery">
+                    <Masonry
+                        className={'items'}
+                        elementType={'ul'}
+                        options={masonryOptions}
+                        disableImagesLoaded={false}
+                        updateOnEachImageLoad={false}
+                    >
+                        {this.state.play.length &&
+                            this.state.play.map((item, key) => {
+                                return (
+                                    <li key={`item-${key}`} className="playItem">
+                                        <img src={item.fields.image.fields.file.url} />
+                                    </li>)
+                            })}
+                    </Masonry>
+                </div>
             </main >
         );
     }
