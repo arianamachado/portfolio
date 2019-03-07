@@ -14,17 +14,17 @@ class Home extends Component {
     constructor() {
         super()
         this.state = { projects: [] }
+    }
 
+    componentDidMount() {
         client.getEntries({ content_type: 'project', order: 'sys.createdAt' })
             .then((response) => {
                 this.setState({ projects: response.items });
             })
             .catch(console.error)
-
     }
 
     render() {
-
         return (
             <main>
                 <div className="morph-wrap">
@@ -43,27 +43,29 @@ class Home extends Component {
                         <div className="scroller"></div>
                     </div>
                 </div>
-                {this.state.projects.length &&
-			
-			        this.state.projects.map((item, key) => {
-				    if(key % 2) {
-                        return(
-                    <ProjectRight
-                    key={`item-${key}`}
-                    title={item.fields.title}
-                    subtitle={item.fields.subtitle}
-                    image={item.fields.mainImage.fields.file.url}
-                />)
-				    } else {
-                        return(
-					   <ProjectLeft
-                        key={`item-${key}`}
-                    title={item.fields.title}
-                    subtitle={item.fields.subtitle}
-                    image={item.fields.mainImage.fields.file.url}
-                    />)
-                    }})};
-		
+                {
+                    this.state.projects.length &&
+
+                    this.state.projects.map((item, key) => {
+                        if (key % 2) {
+                            return (
+                                <ProjectRight
+                                    key={`item-${key}`}
+                                    title={item.fields.title}
+                                    subtitle={item.fields.subtitle}
+                                    image={item.fields.mainImage.fields.file.url}
+                                />)
+                        } else {
+                            return (
+                                <ProjectLeft
+                                    key={`item-${key}`}
+                                    title={item.fields.title}
+                                    subtitle={item.fields.subtitle}
+                                    image={item.fields.mainImage.fields.file.url}
+                                />)
+                        }
+                    })};
+
                 <section className="content content--related">
 
                 </section>
