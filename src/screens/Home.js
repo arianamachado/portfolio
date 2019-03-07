@@ -64,7 +64,7 @@ class Home extends Component {
                                     image={item.fields.mainImage.fields.file.url}
                                 />)
                         }
-                    })};
+                    })}
 
                 <section className="content content--related">
 
