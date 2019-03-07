@@ -12,28 +12,21 @@ class Play extends Component {
 
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = { play: [] }
 
         client.getEntries({ content_type: 'play', order: 'sys.createdAt' })
             .then((response) => {
-                let play = [];
-                response.items.forEach((item, key) => {
-                    play.push(
-                        item
-                    )
-                });
-                this.setState({ play });
+                this.setState({ play: response.items });
             })
             .catch(console.error)
 
     }
 
     render() {
-        let play = this.state.play
-        console.log(play)
+        // console.log(play)
         return (
             < main >
-                <Nav />
+                <h1 id="pageTitle">Play</h1>
 
             </main >
         );

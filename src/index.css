@@ -23,28 +23,28 @@ body {
     background-color: black;
 }
 
-#mainnav a {
+#mainnav .navLink {
     position: fixed;
     text-decoration: none;
     color: black;
     z-index: 10;
 }
 
-#mainnav a#about {
+#about {
     top: 250px;
     left: 40px;
     transform-origin: right top;
     transform: translateX(-100%) rotate(-90deg);
 }
 
-#mainnav a#play {
+#play {
     right: 40px;
     top: 250px;
     transform-origin: left top;
     transform: translateX(100%) rotate(90deg);
 }
 
-#mainnav a#work {
+#work {
     top: 650px;
     left: 40px;
     transform-origin: left bottom;
@@ -184,6 +184,10 @@ h1 {
     font-size: 3.5vmax;
     line-height: 4.5vmax;
     letter-spacing: 2px;
+}
+
+#pageTitle {
+	margin-top: 100px;
 }
 
 .memojiImg {

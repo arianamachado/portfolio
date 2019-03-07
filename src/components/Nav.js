@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import Home from '../screens/Home';
+import Play from '../screens/Play';
+import {
+    Route,
+    NavLink
+} from "react-router-dom";
 
 class Nav extends Component {
     render() {
@@ -6,13 +12,13 @@ class Nav extends Component {
             <nav id="mainnav">
                 <img id="logo" src={require('../images/logo.png')} alt="Ariana Machado's logo" />
                 <span className="topline" id="rightline"></span>
-                <a id="about" href="">ABOUT</a>
+                <NavLink className="navLink" id="about" to="/">ABOUT</NavLink>
                 <span className="divider" id="lineone"></span>
-                <a id="work" href="">WORK</a>
+                <NavLink className="navLink" id="work" to="/">WORK</NavLink>
                 <span className="topline" id="leftline"></span>
-                <a id="play" href="">PLAY</a>
+                <NavLink className="navLink" id="play" to="/play">PLAY</NavLink>
                 <span className="divider" id="linetwo"></span>
-                <a id="contact" href="">CONTACT</a>
+                <NavLink className="navLink" id="contact" to="/">CONTACT</NavLink>
             </nav>
         );
     }
