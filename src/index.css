@@ -19,7 +19,7 @@ body {
 }
 
 
-/**** NAV ****/
+/******** NAV ********/
 
 #mainnav {
     display: block;
@@ -116,7 +116,7 @@ body {
 }
 
 
-/*** CONTENT AREA ***/
+/******** HOME PAGE ********/
 
 main {
 	position: relative;
@@ -398,7 +398,7 @@ li {
 
 /******* MEDIA QUERIES *********/
 
-@media screen and (max-width: 88em) {
+@media screen and (max-width: 1410px) {
 	.content__img {
 		width: 400px;
 	}
@@ -409,13 +409,21 @@ li {
 }
 
 
-@media screen and (max-width: 50em) {
-	.demos {
-		text-align: center;
+@media screen and (max-width: 1250px) {
+	.content--layout-2 {
+		margin-right: 0;
 	}
+}
+
+@media screen and (max-width: 1000px) {
 	#mainnav {
 		display: none;
 	}
+
+	.content {
+		margin-top: 100px;
+	}
+
 	.layout--1 {
 		flex-direction: column;
 	}
@@ -423,15 +431,20 @@ li {
 	.layout--2 {
 		flex-direction: column-reverse;
 	}
+
+	.content__img {
+		margin-top: 100px;
+	}
 }
 
-@media screen and (max-width: 40em) {
-	
-}
+@media screen and (max-width: 768px) {
+	.layout--1 {
+		height: auto;
+	}
 
-@media screen and (max-width: 36em) {
-	
-
+	.layout--2 {
+		height: auto;
+	}
 }
 
 @media screen and (max-width: 32em) {
