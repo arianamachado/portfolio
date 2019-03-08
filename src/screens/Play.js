@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from '../components/Nav';
 import Masonry from 'react-masonry-component';
 
+// Connect to contentful database
 const contentful = require('contentful');
 const client = contentful.createClient({
     space: 'wggj87juntcu',
@@ -9,6 +10,7 @@ const client = contentful.createClient({
     environment: 'master'
 });
 
+// Options for masonry (the tile layout)
 const masonryOptions = {
     transitionDuration: 0
 };
@@ -19,6 +21,7 @@ class Play extends Component {
         super(props)
         this.state = { play: [] }
 
+        // Get entries from contentful
         client.getEntries({ content_type: 'play', order: 'sys.createdAt' })
             .then((response) => {
                 this.setState({ play: response.items });
@@ -28,20 +31,6 @@ class Play extends Component {
     }
 
     render() {
-
-        // {
-        //     const childElements = [];
-
-        //     this.state.play.length &&
-        //         this.state.play.map((item, key) => {
-        //             childElements.push(
-        //                 <li className="image-element-class">
-        //                     <img src={item.fields.image.fields.file.url} />
-        //                 </li>
-        //             )
-        //         });
-
-        // };
 
         return (
             < main>
@@ -54,7 +43,8 @@ class Play extends Component {
                         disableImagesLoaded={false}
                         updateOnEachImageLoad={false}
                     >
-                        {this.state.play.length &&
+                        {// Loop through the entries and add them to the page
+                            this.state.play.length &&
                             this.state.play.map((item, key) => {
                                 return (
                                     <li key={`item-${key}`} className="playItem">

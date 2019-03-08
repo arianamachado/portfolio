@@ -3,6 +3,7 @@ import ProjectLeft from '../components/ProjectLeft';
 import ProjectRight from '../components/ProjectRight';
 import memojiVid from '../images/Memoji.mov';
 
+// Connect to contentful
 const contentful = require('contentful');
 const client = contentful.createClient({
     space: 'wggj87juntcu',
@@ -17,6 +18,7 @@ class Home extends Component {
         this.state = { projects: [] }
     }
 
+    // Get entries from contentful 
     componentDidMount() {
         client.getEntries({ content_type: 'project', order: 'sys.createdAt' })
             .then((response) => {
@@ -43,6 +45,7 @@ class Home extends Component {
                     </div>
                 </div>
                 {
+                    //Loop through the entries and add them to the page, alternating between ProjectRight and ProjectLeft
                     this.state.projects.length &&
 
                     this.state.projects.map((item, key) => {

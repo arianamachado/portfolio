@@ -8,6 +8,7 @@ import {
 
 class Nav extends Component {
     render() {
+        // This is the navigation that will appear on all pages
         return (
             <nav id="mainnav">
                 <NavLink className="navLink" to="/"><img id="logo" src={require('../images/logo.png')} alt="Ariana Machado's logo" /></NavLink>
