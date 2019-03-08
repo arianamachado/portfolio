@@ -10,7 +10,7 @@ class Nav extends Component {
     render() {
         return (
             <nav id="mainnav">
-                <img id="logo" src={require('../images/logo.png')} alt="Ariana Machado's logo" />
+                <NavLink className="navLink" to="/"><img id="logo" src={require('../images/logo.png')} alt="Ariana Machado's logo" /></NavLink>
                 <span className="topline" id="rightline"></span>
                 <NavLink className="navLink" id="about" to="/">ABOUT</NavLink>
                 <span className="divider" id="lineone"></span>

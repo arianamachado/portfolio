@@ -12,6 +12,8 @@ body {
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
 }
 
 /**** NAV ****/
@@ -142,7 +144,7 @@ video {
     margin-left: auto;
     margin-right: auto;
     width: 200px;
-    height: 200px;
+	height: 200px;
 }
 
 /* SVG Morph */
@@ -247,6 +249,7 @@ li {
 .layout--1 {
 	justify-content: flex-start;
 	margin-left: 100px;
+	margin-right: 100px;
 	position: relative;
 	display: flex;
 	flex-direction: row;
