@@ -396,6 +396,11 @@ h6:hover .arrow{
 	padding: 1em;
 }
 
+.footer {
+	background-color: black;
+	height: 50vh;
+}
+
 @media screen and (max-width: 88em) {
 	.content__img {
 		width: 400px;
