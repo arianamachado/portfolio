@@ -345,7 +345,7 @@ h1 {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
-	height: 70vh;
+	height: 100vh;
 	min-height: 600px;
 	pointer-events: none;
 	margin-right: 100px;
