@@ -545,16 +545,20 @@ li {
 	}
 }
 
-@media screen and (max-width: 32em) {
-	
+@media screen and (max-width: 400px) {
+	.top-header h1{
+		font-size: 2.8vmax;
+		padding: 0px 10px;
+	}
+
+	.top-header {
+		margin-top: 120px;
+
+	}
+
 	.content__desc,
 	.content__link {
 		font-size: 1.35em;
 	}
-
-}
-
-@media screen and (max-width: 28em) {
-	
 
 }
