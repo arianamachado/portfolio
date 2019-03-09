@@ -564,4 +564,8 @@ li {
 		display: block;
 	}
 
+	.playItem img {
+		width: 230px;
+	}
+
 }
