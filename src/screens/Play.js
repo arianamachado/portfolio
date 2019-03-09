@@ -30,7 +30,6 @@ class Play extends Component {
     }
 
     render() {
-
         return (
             < main>
                 <h1 id="pageTitle">Play</h1>

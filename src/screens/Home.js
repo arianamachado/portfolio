@@ -67,10 +67,9 @@ class Home extends Component {
                                 />)
                         }
                     })}
+                {/* <section className="content content--related footer">
 
-                <section className="content content--related footer">
-
-                </section>
+                </section> */}
             </main >
         );
     }

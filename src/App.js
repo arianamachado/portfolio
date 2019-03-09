@@ -12,6 +12,7 @@ import {
 class App extends Component {
 
   render() {
+
     return (
       <HashRouter>
         <main className="App">
@@ -19,6 +20,8 @@ class App extends Component {
           <Nav />
           <Route exact path="/" component={Home} />
           <Route path="/play" component={Play} />
+          {/* <Route path={YOURPATH} render={(props) => <YourComp {...props} key={randomGen()}/>} /> */}
+
         </main>
       </HashRouter>
     );

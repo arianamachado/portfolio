@@ -16,6 +16,7 @@ class Nav extends Component {
                 <NavLink className="navLink" id="play" to="/play">PLAY</NavLink>
                 <span className="divider" id="linetwo"></span>
                 <NavLink className="navLink" id="contact" to="/">CONTACT</NavLink>
+
             </nav>
         );
     }
