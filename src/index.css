@@ -536,11 +536,7 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-	.layout--1 {
-		height: auto;
-	}
-
-	.layout--2 {
+	.layout--1, .layout--2 {
 		height: auto;
 	}
 }
@@ -554,12 +550,18 @@ li {
 
 	.top-header {
 		margin-top: 90px;
-
 	}
 
-	.content__desc,
-	.content__link {
-		font-size: 1.35em;
+	.content__title {
+		font-size: 30px;
+	}
+
+	.content__desc {
+		font-size: 1.1em;
+	}
+
+	.content {
+		display: block;
 	}
 
 }
