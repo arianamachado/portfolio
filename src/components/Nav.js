@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import Home from '../screens/Home';
-import Play from '../screens/Play';
 import {
-    Route,
     NavLink
 } from "react-router-dom";
-
 class Nav extends Component {
     render() {
         // This is the navigation that will appear on all pages

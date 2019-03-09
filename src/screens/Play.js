@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../components/Nav';
 import Masonry from 'react-masonry-component';
 
 // Connect to contentful database
@@ -48,7 +47,7 @@ class Play extends Component {
                             this.state.play.map((item, key) => {
                                 return (
                                     <li key={`item-${key}`} className="playItem">
-                                        <img src={item.fields.image.fields.file.url} />
+                                        <img src={item.fields.image.fields.file.url} alt="Fun Project" />
                                     </li>)
                             })}
                     </Masonry>
