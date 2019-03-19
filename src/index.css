@@ -363,15 +363,15 @@ h1 {
 	margin-left: 100px;
 }
 
-.content {
+/* .content {
 	position: relative;
 	display: grid;
-}
+} */
 
 .content--layout {
 	pointer-events: auto;
 }
-
+/* 
 .content--related {
 	text-align: center;
 	align-content: center;
@@ -380,7 +380,7 @@ h1 {
 	min-height: 600px;
 	height: 100vh;
 	font-size: 0.85em;
-}
+} */
 
 .content__img {
 	width: 600px;
@@ -432,28 +432,6 @@ h6:hover .arrow{
 	grid-column: 1 / 3;
 }
 
-.content__related-item {
-	padding: 1em;
-	transition: color 0.3s;
-}
-
-.content__related-img {
-	max-width: 100%;
-	opacity: 0.8;
-	transition: opacity 0.3s;
-}
-
-.content__related-item:hover .content__related-img,
-.content__related-item:focus .content__related-img {
-	opacity: 1;
-}
-
-.content__related-title {
-	font-size: 1em;
-	margin: 0;
-	padding: 0.5em;
-}
-
 .content--layout-2 .content__img {
 	grid-column: 3 / 5;
 	grid-row: 1 / 3;
@@ -488,6 +466,15 @@ li {
 .playItem {
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
 	margin: 20px;
+}
+
+
+/******* FOOTER *******/
+.footer {
+	margin-top: 200px;
+	background-color: black;
+	height: 30vmax;
+	z-index: 1000;
 }
 
 /******* MEDIA QUERIES *********/

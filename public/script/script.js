@@ -3,7 +3,7 @@ $(document).ready(function () {
 	DOM.svg = document.querySelector('.morph');
 	DOM.shapeEl = DOM.svg.querySelector('path');
 	DOM.contentElems = Array.from(document.querySelectorAll('.content-wrap'));
-	DOM.footer = document.querySelector('.content--related');
+	DOM.footer = document.querySelector('.footer');
 	const contentElemsTotal = DOM.contentElems.length;
 	const shapes = [
 		{
@@ -39,7 +39,7 @@ $(document).ready(function () {
 			tx: -300,
 			ty: 100,
 			fill: {
-				color: '#F12B13',
+				color: '#959DAD',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -63,7 +63,7 @@ $(document).ready(function () {
 			tx: 300,
 			ty: 100,
 			fill: {
-				color: '#0652DD',
+				color: '#FFE117',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -87,7 +87,7 @@ $(document).ready(function () {
 			tx: -550,
 			ty: 100,
 			fill: {
-				color: '#FFE117',
+				color: '#FF4624',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -111,7 +111,7 @@ $(document).ready(function () {
 			tx: 400,
 			ty: 50,
 			fill: {
-				color: '#FF4624',
+				color: '#0652DD',
 				duration: 500,
 				easing: 'linear'
 			},
@@ -135,7 +135,7 @@ $(document).ready(function () {
 			tx: -300,
 			ty: 100,
 			fill: {
-				color: '#959DAD',
+				color: '#F12B13',
 				duration: 500,
 				easing: 'linear'
 			},
